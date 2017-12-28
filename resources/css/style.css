@@ -80,6 +80,10 @@ ul a {
   padding: .75rem 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /*--          gadgets           --*/
 .gadgets {
   display: flex;
@@ -89,7 +93,6 @@ ul a {
 
 .gadget {
   width: 30%;
-
 }
 
 .gadget-image {
@@ -118,6 +121,8 @@ max-height: 60%;
   padding: .5rem 0;
   margin: 0 auto;
 }
+
+
 
 /*--          Contact Info          --*/
 .contactinfo {
@@ -149,4 +154,89 @@ footer {
   background-color: black;
   text-align: left;
   align-items: center;
+}
+
+/*--          Max Screen 102px          --*/
+@media only screen and (max-width: 1024px) {
+  nav .productnav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .gadget {
+    width: 47%;
+  }
+
+  /*--          or include or gadgets
+
+  .gadgets {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+--*/
+  #glasses-mobile {
+    display: none;
+  }
+}
+
+/*--        Max Screen 470px          --*/
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .headerimage {
+    padding-top: 10rem;
+    height: 15rem;
+  }
+  .newarrivals {
+    padding: 1rem 2rem;
+  }
+  .newarrivals h3 {
+    font-size: .77rem;
+    font-weight: bold;
+  }
+
+  .newarrivals h1 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .gadgets {
+    display: flex;
+  }
+  .gadget {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .gadget h3 {
+    width: 100%;
+
+  }
+
+  #watch-mobile {
+    display: none;
+  }
+
+  .contactinfo {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .5rem 0;
+  }
+
+  .info {
+    width: 90%;
+    margin: .5rem 0;
+  }
+  footer {
+    text-align: center;
+  }
 }
