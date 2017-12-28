@@ -1,71 +1,103 @@
 html {
-font-size: 18px;
-}
-
-div {
-  border: 1px solid red;
-}
-
-.main {
   font-family: Helvetica;
-  display: flex;
-  flex-direction: column;
+  font-size: 18px;
+}
+div {
+  border: 1px solid blue;
+
 }
 
-.container {}
-
-/*--        header          --*/
+/*--          header          --*/
 .header {
-  display: flex;
   background-color: black;
-  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .headertop {
-  width: 960px;
-  display: inline-flex;
+  display: flex;
   color: white;
-  background-color: black;
   align-items: center;
-
 }
 
 .headertop img {
+  left-padding: 0.5rem;
   height: 1.5rem;
-  padding-left: 0.5rem;
 }
 
 .headertop h3 {
-  font-size: 1rem;
   padding: 0.66rem 1rem;
+  font-size: 1rem;
 }
-/*--          image new arrivals          --*/
-.image {
+
+/*--          new arrival image           --*/
+.headerimage {
   background-image: url("../images/moto.jpeg");
   background-size: cover;
   height: 25rem;
-  display: flex;
-  justify-content: center;
 }
 
-.newarrivalbox {
-  width: 960px;
-}
-.newarrival {
-  width: 20rem;
+.newarrivals {
+  font-weight: bold;
   color: white;
   background-color: black;
   margin-top: 9rem;
+  width: 20rem;
   padding: 2rem 3rem;
 }
 
-.newarrival h3 {
+.newarrivals h3 {
   font-size: 1rem;
   font-weight: bold;
-  padding-bottom: 0.25rem;
 }
 
-.newarrival h1 {
-  font-size: 2rem;
+.newarrivals h1 {
   font-weight: bold;
+  font-size: 2rem;
+  padding-top: .25rem;
+}
+
+/*--          navigation          --*/
+nav {
+background-color: firebrick;
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: firebrick;
+  padding: .75rem 0;
+  justify-content: space-between;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  padding: .75rem 0;
+}
+
+/*--          gadgets           --*/
+.gadgets {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: space-between;
+}
+
+.gadget {
+  width: 30%;
+
+}
+
+.gadget-image {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.gadget-image img {
+  height: 9rem;
 }
